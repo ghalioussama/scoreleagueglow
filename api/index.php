@@ -5,7 +5,7 @@
 if(array_key_exists("submit",$_GET)){
   
 //add points to country
-$jsonString = file_get_contents(app_path('leaderboard.json'));
+$jsonString = file_get_contents('leaderboard.json');
 $data = json_decode($jsonString, true);
 
 foreach ($data as $key => $entry) {
